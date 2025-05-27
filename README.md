@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+
 # ♻️ AEP-ENTREGA1 — Agendamento de Coleta de Resíduos
 
 Projeto desenvolvido para variadas disciplinas  **Unicesumar**, com foco em **sustentabilidade urbana** e aplicação prática da ODS 11.
