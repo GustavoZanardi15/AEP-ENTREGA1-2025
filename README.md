@@ -1,6 +1,6 @@
 # ♻️ AEP-ENTREGA1 — Agendamento de Coleta de Resíduos
 
-Projeto desenvolvido para a disciplina da **Escola de TI — Unicesumar**, com foco em **sustentabilidade urbana** e aplicação prática da ODS 11.
+Projeto desenvolvido para variadas disciplinas  **Unicesumar**, com foco em **sustentabilidade urbana** e aplicação prática da ODS 11.
 
 Este sistema permite que cidadãos agendem a coleta de resíduos recicláveis, promovendo a conscientização ambiental e a organização dos serviços de coleta.
 
