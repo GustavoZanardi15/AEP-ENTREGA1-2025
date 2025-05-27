@@ -1,15 +1,24 @@
 const express = require('express');
 const cors = require('cors');
-const coletaRoutes = require('./routes/coletaRoutes');
+const { criarAgendamento, listarAgendamentos } = require('./models/agendamento');
 
 const app = express();
-const PORT = 3001;
-
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/coletas', coletaRoutes);
+app.post('/agendamentos', (req, res) => {
+  const { nome, tipo, data } = req.body;
+  if (!nome || !tipo || !data) {
+    return res.status(400).json({ erro: 'Preencha todos os campos' });
+  }
+  const agendamento = criarAgendamento({ nome, tipo, data });
+  res.status(201).json(agendamento);
+});
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+app.get('/agendamentos', (req, res) => {
+  res.json(listarAgendamentos());
+});
+
+app.listen(3000, () => {
+  console.log('🚀 Servidor rodando na porta 3000');
 });
