@@ -1,20 +1,20 @@
-let agendamentos = [];
-let contadorId = 1;
+const express = require('express');
+const { criarAgendamento, listarAgendamentos } = require('../models/agendamento');
 
-function criarAgendamento({ nome, tipo, data }) {
-  const agendamento = {
-    id: contadorId++,
-    nome,
-    tipo,
-    data,
-    criadoEm: new Date()
-  };
-  agendamentos.push(agendamento);
-  return agendamento;
-}
+const router = express.Router();
 
-function listarAgendamentos() {
-  return agendamentos;
-}
+router.post('/', (req, res) => {
+  const { nome, tipo, data } = req.body;
+  if (!nome || !tipo || !data) {
+    return res.status(400).json({ erro: 'Preencha todos os campos' });
+  }
+  const agendamento = criarAgendamento({ nome, tipo, data });
+  res.status(201).json(agendamento);
+});
 
-module.exports = { criarAgendamento, listarAgendamentos };
+router.get('/', (req, res) => {
+  const agendamentos = listarAgendamentos();
+  res.json(agendamentos);
+});
+
+module.exports = router;
