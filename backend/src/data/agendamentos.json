@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nome": "Gustavo Zanardi",
+    "tipo": "Vidro",
+    "data": "2025-06-01",
+    "criadoEm": "2025-05-29T11:06:04.800Z"
+  },
+  {
+    "id": 2,
+    "nome": "Gustavo Zanardi",
+    "tipo": "Vidro",
+    "data": "2025-06-01",
+    "criadoEm": "2025-05-29T11:06:09.386Z"
+  },
+  {
+    "id": 3,
+    "nome": "Gustavo Zanardi",
+    "tipo": "Vidro",
+    "data": "2025-06-01",
+    "criadoEm": "2025-05-29T11:06:09.973Z"
+  },
+  {
+    "id": 4,
+    "nome": "Gustavo Zanardi",
+    "tipo": "Vidro",
+    "data": "2025-06-01",
+    "criadoEm": "2025-05-29T11:06:10.595Z"
+  },
+  {
+    "id": 5,
+    "nome": "Gustavo Ulian",
+    "tipo": "Vidro",
+    "data": "2025-06-01",
+    "criadoEm": "2025-05-29T11:06:22.413Z"
+  }
+]
