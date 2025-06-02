@@ -1,49 +1,92 @@
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+# 🌱 Sistema de Coleta – AEP ENTREGA 1
 
-# ♻️ AEP-ENTREGA1 — Agendamento de Coleta de Resíduos
-
-Projeto desenvolvido para variadas disciplinas  **Unicesumar**, com foco em **sustentabilidade urbana** e aplicação prática da ODS 11.
-
-Este sistema permite que cidadãos agendem a coleta de resíduos recicláveis, promovendo a conscientização ambiental e a organização dos serviços de coleta.
+Este é um sistema web completo para **agendamento de coleta de resíduos recicláveis**, desenvolvido com foco social e sustentável. O projeto foi construído com **React + Tailwind CSS** no frontend e **Node.js + Express** no backend.
 
 ## 📁 Estrutura do Projeto
 
-```bash
 AEP-ENTREGA1/
-│
-├── frontend/     # Aplicação React + Tailwind CSS
-├── backend/      # API Node.js + Express (em desenvolvimento)
-└── README.md     # Documentação geral do projeto
-
-🚀 Tecnologias Utilizadas
-
-| Camada        | Tecnologias principais      |
-| ------------- | --------------------------- |
-| Frontend      | React, Tailwind CSS         |
-| Backend       | Node.js, Express (em breve) |
-| Versionamento | Git, GitHub                 |
+├── backend/ # API REST com Express
+│ ├── src/
+│ │ └── server.js
+│ ├── package.json
+├── frontend/ # Interface do usuário com React + Tailwind
+│ ├── src/
+│ │ ├── pages/
+│ │ ├── components/
+│ ├── package.json
+└── README.md
 
 
-📦 Como executar o projeto
-🔧 Pré-requisitos
-Node.js (v18+)
+---
 
-Git
+## 🚀 Tecnologias Utilizadas
 
-🖥️ Clonando o repositório
+- **Frontend**
+  - React
+  - React Router DOM
+  - Tailwind CSS
+  - Axios
+
+- **Backend**
+  - Node.js
+  - Express
+  - Cors
+  - Nodemon (ambiente de desenvolvimento)
+
+---
+
+## ⚙️ Como Rodar o Projeto Localmente
+
+### Pré-requisitos
+
+- Node.js instalado (versão recomendada: 18+)
+- Git instalado
+
+---
+
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/GustavoZanardi15/AEP-ENTREGA1-2025.git
 cd AEP-ENTREGA1-2025
 
-📌 Documentação por camadas
 
-| Componente | Link da branch                                                                    | Descrição                                 |
-| ---------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
-| Frontend   | [`frontend`](https://github.com/GustavoZanardi15/AEP-ENTREGA1-2025/tree/frontend) | Interface do usuário com React + Tailwind |
-| Backend    | [`backend`](https://github.com/GustavoZanardi15/AEP-ENTREGA1-2025/tree/backend)   | API para agendamentos (em breve)          |
+2. Rodar o Backend
+cd backend
+npm install       # Instala as dependências
+npm run dev       # Inicia o servidor em http://localhost:3000
+Se npm run dev der erro, instale o nodemon globalmente:
+npm install -g nodemon
 
 
-👨‍💻 Autor
-Gustavo Ulian Zanardi
-Acadêmico de Engenharia de Software — Unicesumar
-GitHub https://github.com/GustavoZanardi15/AEP-ENTREGA1-2025
 
+3. Rodar o Frontend
+Abra um novo terminal:
+cd frontend
+npm install       # Instala as dependências
+npm run dev       # Inicia o frontend em http://localhost:5173
+
+
+🧪 Como Testar a Integração
+Acesse http://localhost:5173 no navegador.
+
+Use o menu fixo no topo para navegar entre:
+Início
+Agendar Coleta: preencha e envie o formulário.
+Lista de Agendamentos: veja os dados salvos da API.
+Os dados devem aparecer atualizados após uma nova coleta ser agendada.
+
+
+📝 Funcionalidades
+Agendamento de coletas com nome, tipo de resíduo e data.
+Listagem dos agendamentos com dados vindos da API.
+Navegação fluida com React Router.
+
+
+📌 Notas Importantes
+Sempre rode frontend e backend ao mesmo tempo para garantir o funcionamento completo.
+O backend atual usa armazenamento em memória (os dados são perdidos ao reiniciar o servidor).
+Para produção, considere integrar com banco de dados (como MongoDB, PostgreSQL etc.).
+
+
+Desenvolvido como parte do desafio acadêmico da disciplina de Projeto Integrador (Unicesumar – 2025).
