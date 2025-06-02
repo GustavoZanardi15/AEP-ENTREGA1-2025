@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import AgendarColeta from "./pages/AgendarColeta";
+import { AgendarColeta } from "./pages/AgendarColeta";
 import ListaAgendamentos from "./pages/ListaAgendamentos";
 import Layout from "./components/Layout";
 
