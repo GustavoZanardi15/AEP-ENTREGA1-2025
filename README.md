@@ -1,5 +1,4 @@
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
-![Extra](https://img.shields.io/badge/Ponto%20Extra-Autentica%C3%A7%C3%A3o%20JWT-purple)
 
 # 🌱 Sistema de Coleta – AEP ENTREGA 1
 
